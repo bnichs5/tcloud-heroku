@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "===== Download Tcloud App ====="
-URL=$(curl -s https://api.github.com/repos/lunik/tcloud/releases/latest | grep browser_download_url | cut -d '"' -f 4)
+URL=$(curl -s https://api.github.com/repos/bnichs5/tcloud/releases/latest | grep browser_download_url | cut -d '"' -f 4)
 wget $URL -O tcloud.tgz
 
 echo "===== Unarchive App ====="
